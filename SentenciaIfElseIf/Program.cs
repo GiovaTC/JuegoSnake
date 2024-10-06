@@ -8,18 +8,17 @@ namespace SentenciaIfElseIf
         static void Main(string[] args)
         {
 
-            bool areYouHungry = true;
-            bool youHaveMoney = false;
-            TimeSpan time2 = new TimeSpan(12, 0, 0);
+            bool fundillo_mea = true;
+            TimeSpan time2 = new TimeSpan(08, 0, 0);
 
-            Console.WriteLine("Hola fundillo");
-            if (areYouHungry && youHaveMoney && AbiertoOcerradoFund("Lonches alejo", time2))
+            Console.WriteLine("Hola tienda deportiva: ");
+            if (fundillo_mea && AbiertoOcerradoFund("ropa y accesorios", time2))
             {
-                Console.WriteLine("abierto");
+                Console.WriteLine("hora de apertura: "+ time2);
             }
             else
             {
-                Console.WriteLine("cerrado"+ "Hora de: "+ time2 + "");
+                Console.WriteLine("cerrado"+ "Hora de ciere: "+ time2 + "");
             }
         }
 
@@ -28,18 +27,18 @@ namespace SentenciaIfElseIf
             TimeSpan time3 = new TimeSpan(08, 0, 0);
             TimeSpan time4 = new TimeSpan(24, 0, 0);
 
-            if (name == "Lonches alejo" && time == (time3) && time < time4 )
+            if (name == "ropa y accesorios" && time == (time3) && time < time4 )
             {
-                Console.WriteLine("se fue de taxi");
+                Console.WriteLine("local abierto, en el centro Comercial !, ");
                 return true;
             }
-            else if (name == "Fundillo") 
+            else if (name == "No es ropa y accesorios") 
             {
                 return false;
             }
             else
             {
-                Console.WriteLine("No habia caldo de pata");
+                Console.WriteLine("Promocion no completada");
                 return true;
             }
         }
