@@ -8,11 +8,11 @@ namespace SentenciaIfElseIf
         static void Main(string[] args)
         {
 
-            bool fundillo_mea = true;
+            bool variable_a = true;
             TimeSpan time2 = new TimeSpan(08, 0, 0);
 
             Console.WriteLine("Hola tienda deportiva: ");
-            if (fundillo_mea && AbiertoOcerradoFund("ropa y accesorios", time2))
+            if (variable_a && AbiertoOcerradoLocal("ropa y accesorios", time2))
             {
                 Console.WriteLine("hora de apertura: "+ time2);
             }
@@ -22,7 +22,7 @@ namespace SentenciaIfElseIf
             }
         }
 
-        static bool AbiertoOcerradoFund(string name, TimeSpan time)
+        static bool AbiertoOcerradoLocal(string name, TimeSpan time)
         {
             TimeSpan time3 = new TimeSpan(08, 0, 0);
             TimeSpan time4 = new TimeSpan(24, 0, 0);
