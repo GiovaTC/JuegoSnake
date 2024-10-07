@@ -5,13 +5,17 @@
     <Grid Background="Green">
         <!-- Área para el mazo y las pilas de fundación -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
-            <Button Name="DeckButton" Width="80" Height="120" Content="Deck" Margin="5"/>
-            <Button Name="WasteButton" Width="80" Height="120" Content="Waste" Margin="5"/>
+            <Button Name="DeckButton" Width="80" Height="120" Margin="5" Click="DeckButton_Click">
+                <Image Name="DeckImage" Stretch="Fill"/>
+            </Button>
+            <Button Name="WasteButton" Width="80" Height="120" Margin="5" Click="WasteButton_Click">
+                <Image Name="WasteImage" Stretch="Fill"/>
+            </Button>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">
-                <Button Width="80" Height="120" Content="Foundation 1" Margin="5"/>
-                <Button Width="80" Height="120" Content="Foundation 2" Margin="5"/>
-                <Button Width="80" Height="120" Content="Foundation 3" Margin="5"/>
-                <Button Width="80" Height="120" Content="Foundation 4" Margin="5"/>
+                <Image Name="Foundation1" Width="80" Height="120" Stretch="Fill" Margin="5"/>
+                <Image Name="Foundation2" Width="80" Height="120" Stretch="Fill" Margin="5"/>
+                <Image Name="Foundation3" Width="80" Height="120" Stretch="Fill" Margin="5"/>
+                <Image Name="Foundation4" Width="80" Height="120" Stretch="Fill" Margin="5"/>
             </StackPanel>
         </StackPanel>
 
@@ -27,26 +31,27 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <!-- Pilas de juego con espacio para las cartas -->
             <StackPanel Grid.Column="0" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 1" Margin="5"/>
+                <Image Name="Pile1" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 2" Margin="5"/>
+                <Image Name="Pile2" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
             <StackPanel Grid.Column="2" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 3" Margin="5"/>
+                <Image Name="Pile3" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
             <StackPanel Grid.Column="3" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 4" Margin="5"/>
+                <Image Name="Pile4" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
             <StackPanel Grid.Column="4" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 5" Margin="5"/>
+                <Image Name="Pile5" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
             <StackPanel Grid.Column="5" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 6" Margin="5"/>
+                <Image Name="Pile6" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
             <StackPanel Grid.Column="6" Orientation="Vertical" Margin="5">
-                <Button Width="80" Height="120" Content="Pile 7" Margin="5"/>
+                <Image Name="Pile7" Width="80" Height="120" Stretch="Fill"/>
             </StackPanel>
         </Grid>
     </Grid>
