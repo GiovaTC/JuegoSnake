@@ -6,5 +6,8 @@ Juego de snake (consola) y solitario con (interfaz grafica)
 
 ![image](https://github.com/user-attachments/assets/71357a0c-1984-4711-97ed-1a90ded5aea6)
 
+![Screenshot_2](https://github.com/user-attachments/assets/b718d3f8-344e-4074-90b6-4b38078f2d40)
+
+
 
 
