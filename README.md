@@ -4,7 +4,7 @@ NERD...pupffrr
 
 ![nerd2](https://github.com/user-attachments/assets/c96df074-43a0-4b40-b926-5219867e2131)
 
-
+NERD .. II
 Juego de snake (consola) y solitario con (interfaz grafica) 
 
 
