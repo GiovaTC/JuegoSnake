@@ -4,8 +4,8 @@ using System.Threading;
 
 class SnakeGame
 {
-    static int ancho = 20; // Ancho del tablero
-    static int alto = 20; // Alto del tablero
+    static int ancho = 40; // Ancho del tablero
+    static int alto = 20;  // Alto del tablero
     static List<(int, int)> snake = new List<(int, int)>(); // Lista de posiciones de la serpiente
     static (int, int) direccion = (0, 1); // Dirección inicial (movimiento hacia la derecha)
     static (int, int) comida; // Posición de la comida
@@ -13,6 +13,10 @@ class SnakeGame
 
     static void Main()
     {
+        // Configurar el tamaño de la consola para adaptarse al tablero
+        Console.SetWindowSize(ancho + 2, alto + 2); // Ajusta el tamaño de la ventana de la consola
+        Console.SetBufferSize(ancho + 2, alto + 2); // Ajusta el tamaño del búfer de la consola
+
         // Inicializar la serpiente
         snake.Add((alto / 2, ancho / 2));
 

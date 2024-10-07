@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Vari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipoDeDatos", "TipoDeDatos\TipoDeDatos.csproj", "{9B1F2D4D-8988-4CA2-A47D-B3BEF3E42438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentenciaIfElseIf", "SentenciaIfElseIf\SentenciaIfElseIf.csproj", "{A44A5850-1259-4B4F-8DBB-2D90A63A087A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juego_Snake_Consola", "SentenciaIfElseIf\Juego_Snake_Consola.csproj", "{A44A5850-1259-4B4F-8DBB-2D90A63A087A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
