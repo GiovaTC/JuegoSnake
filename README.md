@@ -10,5 +10,6 @@ NERD .. II
 Juego de snake (consola) y solitario con (interfaz grafica) 
 
 
+![nerd3](https://github.com/user-attachments/assets/6d448793-6742-480e-a908-c957494ba35e)
 
 
