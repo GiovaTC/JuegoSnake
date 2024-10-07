@@ -12,7 +12,7 @@ namespace SolitarioWPF
 
         private void IniciarJuego()
         {
-            // Lógica para inicializar el juego y distribuir las cartas
+            // Lógica para inicializar el juego y distribuir las cartas.
         }
 
         private void DeckButton_Click(object sender, RoutedEventArgs e)
