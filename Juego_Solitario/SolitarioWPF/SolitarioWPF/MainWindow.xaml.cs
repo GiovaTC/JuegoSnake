@@ -17,7 +17,7 @@ namespace SolitarioWPF
 
         private void IniciarJuego()
         {
-            string folderPath = @"D:\playingcardsassetsmaster\png"; // Reemplaza con la ruta de tu carpeta de imágenes
+            string folderPath = @"D:\playingcardsassetsmaster\png"; // Reemplaza con la ruta de tu carpeta de imágenes.
             string[] imageFiles = ObtenerRutasDeImagenes(folderPath);
 
             if (imageFiles.Length > 0)
