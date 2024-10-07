@@ -3,56 +3,57 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Solitario" Height="600" Width="800">
     <Grid Background="Green">
-        <!-- Área para el mazo y las pilas de fundación -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
-            <Button Name="DeckButton" Width="80" Height="120" Margin="5" Click="DeckButton_Click">
-                <Image Name="DeckImage" Stretch="Fill"/>
-            </Button>
-            <Button Name="WasteButton" Width="80" Height="120" Margin="5" Click="WasteButton_Click">
-                <Image Name="WasteImage" Stretch="Fill"/>
-            </Button>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">
-                <Image Name="Foundation1" Width="80" Height="120" Stretch="Fill" Margin="5"/>
-                <Image Name="Foundation2" Width="80" Height="120" Stretch="Fill" Margin="5"/>
-                <Image Name="Foundation3" Width="80" Height="120" Stretch="Fill" Margin="5"/>
-                <Image Name="Foundation4" Width="80" Height="120" Stretch="Fill" Margin="5"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Mazo -->
+            <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                <Image x:Name="DeckImage" Width="100" Height="140" MouseLeftButtonDown="DeckButton_Click"/>
+            </Border>
+
+            <!-- Pila de Descarte -->
+            <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                <Image x:Name="WasteImage" Width="100" Height="140" MouseLeftButtonDown="WasteButton_Click"/>
+            </Border>
+
+            <!-- Fundaciones -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Foundation1" Width="100" Height="140"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Foundation2" Width="100" Height="140"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Foundation3" Width="100" Height="140"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Foundation4" Width="100" Height="140"/>
+                </Border>
+            </StackPanel>
+
+            <!-- Tableau -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau1" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau2" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau3" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau4" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau5" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau6" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
+                <Border Background="White" Width="100" Height="140" CornerRadius="5">
+                    <Image x:Name="Tableau7" Width="100" Height="140" MouseLeftButtonDown="TableauButton_Click"/>
+                </Border>
             </StackPanel>
         </StackPanel>
-
-        <!-- Área para las pilas de juego -->
-        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <!-- Pilas de juego con espacio para las cartas -->
-            <StackPanel Grid.Column="0" Orientation="Vertical" Margin="5">
-                <Image Name="Pile1" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-            <StackPanel Grid.Column="1" Orientation="Vertical" Margin="5">
-                <Image Name="Pile2" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-            <StackPanel Grid.Column="2" Orientation="Vertical" Margin="5">
-                <Image Name="Pile3" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-            <StackPanel Grid.Column="3" Orientation="Vertical" Margin="5">
-                <Image Name="Pile4" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-            <StackPanel Grid.Column="4" Orientation="Vertical" Margin="5">
-                <Image Name="Pile5" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-            <StackPanel Grid.Column="5" Orientation="Vertical" Margin="5">
-                <Image Name="Pile6" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-            <StackPanel Grid.Column="6" Orientation="Vertical" Margin="5">
-                <Image Name="Pile7" Width="80" Height="120" Stretch="Fill"/>
-            </StackPanel>
-        </Grid>
     </Grid>
 </Window>
